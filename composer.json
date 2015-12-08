@@ -1,0 +1,48 @@
+{
+    "name"             : "devaloka/devaloka-templating",
+    "description"      : "A partial template loader for WordPress",
+    "version"          : "0.2.0",
+    "type"             : "wordpress-muplugin",
+    "keywords"         : [
+        "wordpress",
+        "plugin",
+        "templating",
+        "template"
+    ],
+    "homepage"         : "https://github.com/devaloka/devaloka-templating",
+    "license"          : [
+        "MIT",
+        "GPL-2.0",
+        "GPL-3.0"
+    ],
+    "minimum-stability": "stable",
+    "authors"          : [
+        {
+            "name"    : "Whizark",
+            "email"   : "devaloka@whizark.com",
+            "homepage": "http://whizark.com",
+            "role"    : "Developer"
+        }
+    ],
+    "support"          : {
+        "email" : "devaloka@whizark.com",
+        "issues": "https://github.com/devaloka/devaloka-templating/isssues",
+        "wiki"  : "https://github.com/devaloka/devaloka-templating/wiki",
+        "source": "https://github.com/devaloka/devaloka-templating"
+    },
+    "require"          : {
+        "php"                : ">=5.4.0",
+        "composer/installers": "~1.0",
+        "devaloka/devaloka"  : "~0.5.0"
+    },
+    "archive"          : {
+        "exclude": [
+            ".gitignore",
+            ".gitattributes",
+            ".mailmap",
+            ".editorconfig",
+            "npm-shrinkwrap.json",
+            ".mdastrc"
+        ]
+    }
+}

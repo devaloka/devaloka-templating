@@ -1,0 +1,44 @@
+{
+    "name"           : "devaloka-templating",
+    "version"        : "0.2.0",
+    "description"    : "A partial template loader for WordPress",
+    "keywords"       : [
+        "wordpress",
+        "plugin",
+        "templating",
+        "template"
+    ],
+    "homepage"       : "https://github.com/devaloka/devaloka-templating",
+    "bugs"           : {
+        "url": "https://github.com/devaloka/devaloka-templating/isssues"
+    },
+    "license"        : "(MIT OR GPL-2.0 OR GPL-3.0)",
+    "author"         : {
+        "name" : "Whizark",
+        "email": "devaloka@whizark.com",
+        "url"  : "http://whizark.com"
+    },
+    "files"          : [
+        "./MIT-LICENSE.txt",
+        "./GPL-LICENSE.txt",
+        "./devaloka-templating.php",
+        "./loader/*",
+        "./src/*",
+        "./includes/*"
+    ],
+    "main"           : "./devaloka-templating.php",
+    "repository"     : {
+        "type": "git",
+        "url" : "https://github.com/devaloka/devaloka-templating.git"
+    },
+    "scripts"        : {
+        "lint": "mdast -u mdast-lint README.md"
+    },
+    "dependencies"   : {
+        "devaloka": "*"
+    },
+    "devDependencies": {
+        "mdast"     : "~2.3.0",
+        "mdast-lint": "~1.1.1"
+    }
+}
