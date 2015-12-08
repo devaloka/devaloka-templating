@@ -7,6 +7,7 @@ A partial template loader for WordPress as just a better replacement of
 
 *   Including a partial template as a new lexical environment
 *   Passing/Injecting variable(s) into a partial template
+*   Injecting global variable(s) into a WordPress template
 
 ## Requirements
 
