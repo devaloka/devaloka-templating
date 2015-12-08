@@ -1,6 +1,7 @@
 # Devaloka Templating
 
-A partial template loader for WordPress as just a better replacement of ```get_template_part()```.
+A partial template loader for WordPress as just a better replacement of
+```get_template_part()```.
 
 ## Features
 
