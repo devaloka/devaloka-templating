@@ -1,7 +1,7 @@
 # Devaloka Templating [![Build Status](https://travis-ci.org/devaloka/devaloka-templating.svg?branch=master)](https://travis-ci.org/devaloka/devaloka-templating) [![Packagist](https://img.shields.io/packagist/v/devaloka/devaloka-templating.svg)](https://packagist.org/packages/devaloka/devaloka-templating)
 
 A partial template loader for WordPress as just a better replacement of
-```get_template_part()```.
+`get_template_part()`.
 
 ## Features
 
