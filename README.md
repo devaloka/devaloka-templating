@@ -1,4 +1,4 @@
-# Devaloka Templating
+# Devaloka Templating [![Build Status](https://travis-ci.org/devaloka/devaloka-templating.svg?branch=master)](https://travis-ci.org/devaloka/devaloka-templating)
 
 A partial template loader for WordPress as just a better replacement of
 ```get_template_part()```.
