@@ -1,7 +1,7 @@
 {
     "name"             : "devaloka/devaloka-templating",
     "description"      : "A partial template loader for WordPress",
-    "version"          : "0.2.0",
+    "version"          : "0.2.1",
     "type"             : "devaloka-muplugin",
     "keywords"         : [
         "wordpress",
