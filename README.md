@@ -20,6 +20,3 @@ A partial template loader for WordPress as just a better replacement of
     ```sh
     composer require devaloka/devaloka-templating
     ```
-
-2.  Move `loader/10-devaloka-templating-loader.php` into
-    `<ABSPATH>wp-content/mu-plugins/`.
