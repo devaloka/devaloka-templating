@@ -2,7 +2,7 @@
 /*
 Plugin Name: Devaloka Templating
 Description: A partial template loader for WordPress
-Version: 0.2.0
+Version: 0.2.1
 Author: Whizark
 Author URI: http://whizark.com
 License: GPL-2.0+
