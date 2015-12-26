@@ -6,5 +6,6 @@
 
     <file>./src/</file>
     <file>./loader/</file>
+    <file>./includes/</file>
     <file>./devaloka-templating.php</file>
 </ruleset>
