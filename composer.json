@@ -55,6 +55,7 @@
             "package.json",
             "npm-shrinkwrap.json",
             ".remarkrc",
+            "gulpfile.js",
             "composer.json",
             "phpcs.xml",
             ".travis.yml"
