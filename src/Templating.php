@@ -119,7 +119,7 @@ class Templating implements InjectableTemplatingInterface
         $_slug = $slug;
         $_name = $name;
 
-        return function ($_template_file, $_vars = [], $_globals = []) use ($_slug, $_name) {
+        return function ($_template_file, array $_vars = [], array $_globals = []) use ($_slug, $_name) {
             foreach ($_globals as $key => $value) {
                 if (array_key_exists($key, $GLOBALS)) {
                     ${$key} = &$GLOBALS[$key];
