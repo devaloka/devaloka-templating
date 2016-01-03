@@ -38,13 +38,16 @@ class Templating implements InjectableTemplatingInterface
             return false;
         }
 
-        $defaultVars = $this->getWordPressGlobals();
-        $defaultVars = array_merge($defaultVars, $this->globals);
+        $globals = $this->getWordPressGlobals();
+        $globals = array_merge($globals, $this->globals);
+
+        $defaultVars = $this->getWordPressVariables();
         $defaultVars = array_merge($defaultVars, $this->variables);
         $vars        = array_merge($defaultVars, $vars);
+
         $environment = $this->createEnvironment($slug, $name);
 
-        call_user_func($environment, $templateFile, $vars);
+        call_user_func($environment, $templateFile, $vars, $globals);
     }
 
     public function getTemplate($slug, $name = null)
@@ -86,21 +89,29 @@ class Templating implements InjectableTemplatingInterface
             ]
         );
 
-        if (is_array($wp_query->query_vars)) {
-            foreach ($wp_query->query_vars as $name => $value) {
+        return $globals;
+    }
+
+    protected function getWordPressVariables()
+    {
+        $globals   = $this->getWordPressGlobals();
+        $variables = [];
+
+        if (is_array($globals['wp_query']->query_vars)) {
+            foreach ($globals['wp_query']->query_vars as $name => $value) {
                 if (array_key_exists($name, $globals)) {
                     continue;
                 }
 
-                $globals[$name] = $value;
+                $variables[$name] = $value;
             }
         }
 
-        if (array_key_exists('s', $globals)) {
-            $globals['s'] = esc_attr($globals['s']);
+        if (array_key_exists('s', $variables)) {
+            $variables['s'] = esc_attr($variables['s']);
         }
 
-        return $globals;
+        return $variables;
     }
 
     protected function createEnvironment($slug, $name)
@@ -108,7 +119,15 @@ class Templating implements InjectableTemplatingInterface
         $_slug = $slug;
         $_name = $name;
 
-        return function ($_template_file, $_vars) use ($_slug, $_name) {
+        return function ($_template_file, $_vars, $_globals) use ($_slug, $_name) {
+            foreach ($_globals as $key => $value) {
+                if (array_key_exists($key, $GLOBALS)) {
+                    ${$key} = &$GLOBALS[$key];
+                }
+            }
+
+            unset($key, $value);
+
             extract($_vars, EXTR_SKIP);
 
             do_action('devaloka_tpl_partial_before');
