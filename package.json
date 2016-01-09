@@ -10,7 +10,7 @@
     ],
     "homepage"       : "https://github.com/devaloka/devaloka-templating",
     "bugs"           : {
-        "url": "https://github.com/devaloka/devaloka-templating/isssues"
+        "url": "https://github.com/devaloka/devaloka-templating/issues"
     },
     "license"        : "(MIT OR GPL-2.0 OR GPL-3.0)",
     "author"         : {
