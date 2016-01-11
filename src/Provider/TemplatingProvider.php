@@ -13,10 +13,10 @@ namespace Devaloka\Templating\Provider;
 use Pimple\Container;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Devaloka\Devaloka;
-use Devaloka\DependencyInjection\ContainerInterface;
+use Devaloka\Component\DependencyInjection\ContainerInterface;
 use Devaloka\Provider\ServiceProviderInterface;
 use Devaloka\Provider\EventListenerProviderInterface;
-use Devaloka\EventDispatcher\EventDispatcherAwareInterface;
+use Devaloka\Component\EventDispatcher\EventDispatcherAwareInterface;
 
 /**
  * Class TemplatingProvider

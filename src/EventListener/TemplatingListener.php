@@ -11,8 +11,8 @@
 namespace Devaloka\Templating\EventListener;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Devaloka\EventDispatcher\EventDispatcherAwareInterface;
-use Devaloka\EventDispatcher\EventDispatcherAwareTrait;
+use Devaloka\Component\EventDispatcher\EventDispatcherAwareInterface;
+use Devaloka\Component\EventDispatcher\EventDispatcherAwareTrait;
 use Devaloka\Templating\TemplatingInterface;
 use Devaloka\Templating\InjectableTemplatingInterface;
 
