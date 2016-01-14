@@ -10,7 +10,7 @@
 
 if (!function_exists('devaloka_tpl')) {
     /**
-     * @return \Devaloka\Templating\TemplatingInterface|\Devaloka\Common\NullObject
+     * @return \Devaloka\Templating\TemplatingInterface|\Ecailles\NullObject\NullObject
      */
     function devaloka_tpl()
     {
@@ -22,7 +22,7 @@ if (!function_exists('deva_tpl')) {
     /**
      * @see devaloka_tpl() :alias:
      *
-     * @return \Devaloka\Templating\TemplatingInterface|\Devaloka\Common\NullObject
+     * @return \Devaloka\Templating\TemplatingInterface|\Ecailles\NullObject\NullObject
      */
     function deva_tpl()
     {
@@ -34,7 +34,7 @@ if (!function_exists('dl_tpl')) {
     /**
      * @see devaloka_tpl() :alias:
      *
-     * @return \Devaloka\Templating\TemplatingInterface|\Devaloka\Common\NullObject
+     * @return \Devaloka\Templating\TemplatingInterface|\Ecailles\NullObject\NullObject
      */
     function dl_tpl()
     {
