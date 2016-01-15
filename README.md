@@ -1,4 +1,9 @@
-# Devaloka Templating [![Build Status][travis-image]][travis-url] [![Packagist][packagist-image]][packagist-url]
+# Devaloka Templating
+
+[![Latest Stable Version][stable-image]][stable-url]
+[![Latest Unstable Version][unstable-image]][unstable-url]
+[![License][license-image]][license-url]
+[![Build Status][travis-image]][travis-url]
 
 A partial template loader for WordPress as just a better replacement of
 `get_template_part()`.
@@ -21,8 +26,14 @@ A partial template loader for WordPress as just a better replacement of
     composer require devaloka/devaloka-templating
     ```
 
+[stable-image]: https://poser.pugx.org/devaloka/devaloka-templating/v/stable
+[stable-url]: https://packagist.org/packages/devaloka/devaloka-templating
+
+[unstable-image]: https://poser.pugx.org/devaloka/devaloka-templating/v/unstable
+[unstable-url]: https://packagist.org/packages/devaloka/devaloka-templating
+
+[license-image]: https://poser.pugx.org/devaloka/devaloka-templating/license
+[license-url]: https://packagist.org/packages/devaloka/devaloka-templating
+
 [travis-image]: https://travis-ci.org/devaloka/devaloka-templating.svg?branch=master
 [travis-url]: https://travis-ci.org/devaloka/devaloka-templating
-
-[packagist-image]: https://img.shields.io/packagist/v/devaloka/devaloka-templating.svg
-[packagist-url]: https://packagist.org/packages/devaloka/devaloka-templating
